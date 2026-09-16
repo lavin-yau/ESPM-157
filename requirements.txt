@@ -1,0 +1,7 @@
+pandas
+duckdb
+ibis-framework[duckdb]
+nbval
+plotnine
+pytest
+pyarrow
