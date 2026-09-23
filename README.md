@@ -1,72 +1,39 @@
 # Climate Module
 
-<!-- EDIT with your badge link -->
-[![Reproducibility Check](https://github.com/espm-157/climate-python-template/actions/workflows/main.yml/badge.svg)](https://github.com/espm-157/climate-python-template/actions/workflows/main.yml)
+[![Reproducibility Check](https://github.com/lavin-yau/ESPM-157/actions/workflows/main.yml/badge.svg)](https://github.com/lavin-yau/ESPM-157/actions/workflows/main.yml)
+
 
 ## Team Members
 
-🦸
-🦹
+Lavin Yau. I worked on this assignment myself due to joining the class late (week 4). I followed instructions present in this repository and guidance from a GSI during class. I used AI to help draft code for analysis and wrote explanations and reasonins myself.
 
-## 🎓 Learning Objectives
+## Running the Jupyter Notebook
+Use the course's Linux Jupyter environment with Python 3.11+.
 
-:octocat: Use of GitHub  
-:snake: Use of Jupyter Notebooks  
-:abcd: Accessing tabular data  
-📈 Data visualization  
-🔍 Verifying code you did not write  
-🗄 Working with data larger than memory  
-🌡️ Become familiar with data on global climate change  
+Install requirements with this command:
+python -m pip install -r requirements.txt
 
-## 📖 Content Overview
+Open climate.ipynb in dataHub, select the installed Python environment as the kernel, and run the notebook from top to bottom.
 
-[💻 Assignment template](climate.ipynb)  
-[💯 Assignment rubric](rubric.md)  
-[📊 Session 2 benchmarking exercise](benchmark.md)  
+The notebook downloads the climate datasets directly from their public sources. Because the benchmarking code uses Linux resource measurements, run the notebook in the course Linux environment or another Linux environment.
 
-Individuals or teams will work through and adapt the questions presented in the climate
-notebook to reproduce key indicators of climate change, similar to NASA's
-<https://climate.nasa.gov/vital-signs>.  Our primary objective is to reproduce the famous
-'hockey-stick' curve first reported in _Nature_ ([Mann et al 1998](https://doi.org/10.1038/33859 "Mann, M., Bradley, R. & Hughes, M. Global-scale temperature patterns and climate forcing over the past six centuries. Nature 392, 779–787 (1998). https://doi.org/10.1038/33859"))
-using the most recent observations and most extensive ice core data.  Along the way we
-will encounter many other datasets and learn about wrangling the diverse conventions in
-tabular data.
+## Files
 
-A second thread runs through the module. You have a language model that will write the
-parsing code for you, and it is good at it. It is also wrong in specific, recurring ways
-that produce code which runs cleanly and gives the wrong answer. Each part of the notebook
-pairs a climate data set with one of those failure modes. The notebook does not tell you
-which; finding out is the assignment. The recurring question is the one scientists have
-always had to answer about code they did not write:
+| File | Purpose |
+|---|---|
+| `climate.ipynb` | Climate data analysis, figures, verification blocks, and reflection |
+| `requirements.txt` | Python packages needed to run the notebook and course checks |
+| `rubric.md` | Assignment grading rubric |
+| `.github/workflows/main.yml` | Automated notebook reproducibility check |
 
-> How do I know these numbers are right?
+The notebook downloads the climate datasets directly from their public sources, so no local `data/` directory is required.
 
-Every previous advance that made computing dramatically easier — screens over punchcards,
-compilers over assembly, Python over C — led to more programming by more people, not less.
-Efficiency gets spent on attempting more. That is why this module does not ask you to
-memorize library syntax, and equally why it cannot be completed by pasting the assignment
-into a model and typing "go". The work moves up a level rather than disappearing.
-
-We work in plan mode throughout this module: you review and approve what the model
-proposes before it runs.
-
-## Data sources
+## Files
 
 - NOAA Mauna Loa CO2 record — <https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt>
 - NSIDC Arctic sea ice extent (G02135) — <https://nsidc.org/data/G02135>
 - EXIOBASE 3, cloud-optimized Parquet — <https://source.coop/youssef-harby/exiobase-3>
 - Our World in Data CO2 — <https://github.com/owid/co2-data>
 - Vostok ice core — <https://doi.org/10.3334/CDIAC/ATG.009>
-
-## Setup
-
-Environment setup, GitHub authentication, and language model configuration are covered on
-the [course website](https://espm-157.carlboettiger.info/) rather than here, since those
-mechanics are shared across all four modules and change faster than the assignments do.
-
-We use GitHub Actions to run automated reproducibility checks — click the badge up top for
-details.
-
-## Links
 
 [🌐 Course Website](https://espm-157.carlboettiger.info/)
